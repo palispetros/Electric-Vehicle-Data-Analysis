@@ -57,7 +57,7 @@ The dataset includes:
 
 ## Project Structure
 ```
-ev-data-analysis/
+electric-vehicle-data-analysis/
 ├── ev_data_analysis.r    # Main analysis pipeline
 ├── ev_dataset.xlsx       # Dataset
 ├── plots/                # Generated visualizations
