@@ -1,5 +1,5 @@
 # EV Data Analysis: Electric Vehicle Adoption in the European Union
-This project analyzes the adoption patterns of electric vehicles (EVs) across European Union countries over time. It focuses on understanding spatial and temporal differences in EV uptake, charging infrastructure development, energy prices, and policy intensity. The workflow combines data preprocessing, exploratory data analysis (EDA), dimensionality reduction, and multiple clustering techniques to identify meaningful country-level EV market segments.
+This project analyzes the adoption patterns of electric vehicles (EVs) across European Union countries over the period 2020–2024. It investigates spatial and temporal differences in EV uptake, charging infrastructure development, energy prices, and policy intensity. The workflow combines data preprocessing, exploratory data analysis (EDA), dimensionality reduction (PCA), and multiple clustering techniques to identify meaningful country-level EV market segments. A final cluster typology is derived by synthesizing results from multiple clustering approaches and incorporating domain-specific interpretation.
 
 ## Dataset
 The dataset includes:
@@ -15,7 +15,7 @@ The dataset includes:
 - Missing values imputation using missRanger
 - Feature filtering and transformation
 - Wide-format reshaping for time-series analysis
-### 2. Exploratory Data Analysis (EDA)
+### 2. Exploratory Data Analysis
 - Correlation analysis between EV adoption and explanatory variables
 - Temporal trend visualization (2020–2024)
 - Policy score construction from regulatory indicators
@@ -53,14 +53,19 @@ The dataset includes:
   "naniar", "cluster", "missRanger", "dbscan",
   "mclust", "RColorBrewer", "rnaturalearth", "sf",
   "NbClust", "factoextra"))
-4. Run the main script: source("ev_data_analysis.r")
+4. Run the main script: source("ev_data_analysis.R")
 
 ## Project Structure
 ```
 electric-vehicle-data-analysis/
-├── ev_data_analysis.r    # Main analysis pipeline
-├── ev_dataset.xlsx       # Dataset
-├── plots/                # Generated visualizations
+├── results/
+│   ├── clustering_results/
+│   ├── correlation_analysis/
+│   ├── exploratory_analysis/
+│   ├── final_cluster_typology/
+│
+├── ev_data_analysis.R
+├── ev_dataset.xlsx
 └── README.md
 ```
 
