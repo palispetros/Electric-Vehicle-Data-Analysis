@@ -16,6 +16,17 @@ The dataset includes:
 - Dimensionality reduction (PCA)
 - Cluster validation (silhouette, elbow method, NbClust)
 
+## Results
+ 
+The analysis reveals a clear north-west vs. east divide in EU EV adoption. GDP per capita, charging infrastructure (especially ultra-fast DC), and fuel prices emerged as the strongest drivers of BEV uptake. Building on the combined results of multiple clustering techniques and domain-specific interpretation, four country-level EV market segments were ultimately identified:
+ 
+| Cluster | Countries |
+|---|---|
+| **Pioneer EV Markets** | Belgium, Denmark, Finland, Luxembourg, Netherlands, Sweden |
+| **Advanced EV Markets** | Austria, France, Germany |
+| **Developing EV Markets** | Ireland, Italy, Malta, Portugal, Slovenia, Spain |
+| **Limited EV Markets** | Bulgaria, Croatia, Cyprus, Czechia, Estonia, Greece, Hungary, Latvia, Lithuania, Poland, Romania, Slovakia |
+
 ## Technologies
 The project is implemented in R using the following libraries:
 - dplyr, tidyr (data manipulation)
